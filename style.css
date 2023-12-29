@@ -1,0 +1,1806 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+body {
+  width: 100%;
+}
+
+
+@keyframes drip {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  35% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+
+  50% {
+    transform: translateY(110vh);
+  }
+
+  100% {
+    transform: translateY(110vh);
+  }
+
+}
+
+/* Navbar */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: sticky;
+  top: 0px;
+  padding: 10px;
+  background-color: white;
+  z-index: 2;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: end;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+  width: 100%;
+
+}
+
+#mobile,
+#close {
+  visibility: hidden;
+}
+
+
+.logo {
+  margin-left: 20px;
+  display: flex;
+  align-items: end;
+  font-weight: 1000;
+  background-color: transparent;
+  color: #0887d1;
+
+
+}
+
+.logo img {
+  height: 70px;
+  width: 100px;
+  margin-right: 2px;
+}
+
+.main-content {
+  margin-right: 50px;
+}
+
+.main-content a.active,
+.main-content a:hover {
+  color: rgb(8, 135, 209);
+  text-decoration: none;
+  border-radius: 5px;
+  border-bottom: 1px solid rgb(8, 135, 209);
+}
+
+.main-content a.active::after {
+  background-color: aquamarine;
+
+}
+
+.main-content .a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 20px;
+}
+
+
+/* Hero Section  home page*/
+
+#hero {
+
+  background-image: url("./img/portrait-handsome-confident-model-sexy-stylish-man-dressed-checkered-shirt-jeans-fashion-hipster-male-posing-near-white-wall-studio-taking-selfie-photos.jpg");
+  background-size: cover;
+  height: 90vh;
+  padding: 100px;
+  display: flex;
+  padding-top: 250px;
+  padding-left: 900px;
+  flex-direction: column;
+}
+
+#hero h4 {
+  margin-bottom: 20px;
+}
+
+#h21 {
+  color: #0887d1;
+}
+
+#hero #h2 {
+  font-size: 20px;
+}
+
+
+#hero .button {
+  appearance: none;
+  border: none;
+  background-image: url("./img/button.png");
+  background-size: cover;
+  padding: 15px 40px;
+  width: 250px;
+  font-weight: 500;
+  height: 60px;
+  background-color: transparent;
+}
+
+
+/* Featured Products Home page*/
+
+#featured-products {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 50px;
+}
+
+.featured-products-collection {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.product {
+  height: 380px;
+  width: 270px;
+  background-color: rgb(237, 249, 254);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px;
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.product:hover {
+  box-shadow: 2px 2px 5px black;
+  cursor: pointer;
+}
+
+.product img {
+  height: 250px;
+  width: 250px;
+  border-radius: 20px;
+}
+
+.product p {
+  font-size: 10px;
+}
+
+.product h5 {
+  margin-top: -10px;
+}
+
+.product .rating {
+  margin-top: 10px;
+}
+
+.product .price {
+  margin-top: 10px;
+}
+
+/*  Banner 1 home page*/
+
+#banner1 {
+  background-image: url("./img/banner/young-asia-lady-using-phone-credit-bank-card-with-positive-expression-smile-broadly-dressed-casual-clothing-stand-isolated-blue-background-panoramic-banner-background-with-copy-space.jpg");
+  height: 350px;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  padding-top: 100px;
+  background-size: cover;
+}
+
+#banner1 h5 {
+  color: #c1ebf3;
+  margin-left: 450px;
+
+}
+
+#banner1 h2 {
+  font-size: 30px;
+  margin-left: 150px;
+  margin-top: 20px;
+  filter: drop-shadow(2px 2px 2px #d2e2e5);
+
+}
+
+#banner1 button {
+  margin-left: 430px;
+  margin-top: 20px;
+  appearance: none;
+  height: 50px;
+  width: 150px;
+  background-color: #d2e2e5;
+  border: none;
+  font-weight: 700;
+  border-radius: 10px;
+  border: 5px inset #d2e2e5;
+  transition: 0.1s linear;
+}
+
+#banner1 button:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 1px black;
+  background-color: #222;
+  border-color: black;
+  color: azure;
+}
+
+/* Action and text banners*/
+
+#action-banners {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+#action-banners .banner {
+  height: 400px;
+  width: 45%;
+  padding-left: 40px;
+  color: white
+}
+
+#action-banners .bn1 {
+  background-image: url("./img/banner/b17.jpg");
+  background-size: cover;
+}
+
+#action-banners .bn2 {
+  background-image: url("./img/banner/b10.jpg");
+  background-size: cover;
+}
+
+#action-banners .b1 button {
+
+  margin-top: 20px;
+  border: 2px solid white;
+  background-color: transparent;
+  height: 50px;
+  color: white;
+  width: 150px;
+  font-weight: 700;
+  transition: 0.5s linear;
+}
+
+#action-banners .b1 button:hover {
+  background-color: #0887d1;
+  cursor: pointer;
+  border: none;
+}
+
+
+#action-banners .b1 h6 {
+  margin-top: 15px;
+
+}
+
+#action-banners .b1 h2 {
+  margin-top: 10px;
+  color: white;
+  filter: drop-shadow(2px 2px 1px black);
+}
+
+#action-banners .b1 h5 {
+  margin-top: 140px;
+  margin-left: 4px;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+/* text banners home page*/
+
+#text-banners {
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+#text-banners .banner {
+  background-color: #222;
+  height: 200px;
+  width: 26%;
+  background-size: cover;
+  padding-top: 70px;
+  padding-left: 20px;
+}
+
+#text-banners .banner h3 {
+  color: white;
+  font-size: 30px;
+  font-weight: 1000;
+  margin-bottom: 10px;
+}
+
+#text-banners .banner h5 {
+  color: red;
+}
+
+#text-banners #b1 {
+  background-image: url("./img/banner/b7.jpg");
+}
+
+#text-banners #b2 {
+  width: 35%;
+  background-image: url("./img/banner/b4.jpg");
+}
+
+#text-banners #b3 {
+  background-image: url("./img/banner/b18.jpg");
+}
+
+/*Signup BAnner*/
+
+#sign-up-banner {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+  margin-bottom: 50px;
+  align-items: center;
+  background-image: url("./img/banner/bn15.jpg");
+
+}
+
+#sign-up-banner .head h2 {
+  color: #031018;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+#sign-up-banner .head p {
+  color: aliceblue;
+  margin-top: 5px;
+}
+
+#sign-up-banner .head p span {
+  color: chartreuse;
+}
+
+#sign-up-banner .signup input {
+  height: 50px;
+  width: 450px;
+  margin-right: 0px;
+  text-align: end;
+  padding: 5px;
+  padding-right: 20px;
+
+}
+
+#sign-up-banner .signup button {
+  height: 48px;
+  width: 100px;
+  margin-left: -4px;
+  border: none;
+  background-color: rgb(17, 204, 142);
+  transition: 0.5s linear;
+
+}
+
+#sign-up-banner .signup button:hover {
+  color: white;
+  background-color: #031018;
+  box-shadow: 2px 2px 2px rgb(161, 211, 255);
+  cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+  padding: 50px;
+}
+
+footer .container {
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+}
+
+footer .container .col1 img {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 40px;
+}
+
+footer .container .col1 #h6 {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+footer .container .col1 p {
+  font-size: 12px;
+}
+
+footer .container .col1 p span {
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+footer .container .col1 #h61 {
+  font-size: 15px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+footer .container .col1 .icons i {
+  margin: 5px;
+  transition: 0.2s linear;
+  cursor: pointer;
+  color: #031018;
+}
+
+footer .container .col1 .icons i:hover {
+  color: #0887d1;
+}
+
+footer .about-us {
+  margin-left: 100px;
+  margin-bottom: 35px;
+}
+
+footer .about-us .icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .about-us .icons img {
+  width: 200px;
+}
+
+#install h6 {
+  margin-bottom: 20px;
+}
+
+#install p {
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+/*   Shop Page    */
+
+
+/*  BAnner 1 Shop page*/
+
+
+#Sbannner1 {
+  background-image: url("./img/banner/b1.jpg");
+  height: 350px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  padding-top: 150px;
+  padding-left: 500px;
+  background-size: cover;
+  color: #d2e2e5;
+}
+
+#Sbannner1 h1 {
+  color: #d2e2e5;
+}
+
+
+
+/*  sprodcut page*/
+
+
+#main {
+  padding: 100px;
+  display: flex;
+  height: 60%;
+}
+
+#mainimg {
+  width: 100%;
+  margin-bottom: 0px;
+  margin-right: 40px;
+}
+
+#mainimg #img {
+  width: 100%;
+}
+
+.small-image-group {
+  display: flex;
+  margin: 0px;
+  margin-left: -4px;
+}
+
+.small-image-group .smallimg {
+  margin: 3px;
+  width: 23.7%;
+  cursor: pointer;
+}
+
+#desc {
+  height: 100%;
+  padding: 20px;
+}
+
+#desc h3 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+#desc #h3 {
+  margin-top: 40px;
+  color: #0887d1;
+  margin-bottom: 10px;
+}
+
+#desc select {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#desc input {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 2px;
+  font-size: 15px;
+  margin-right: 15px;
+}
+
+#desc button {
+  height: 40px;
+  width: 150px;
+  background-color: #0887d1;
+  border: none;
+  color: aliceblue;
+  font-weight: 600;
+  transition: 0.2s linear;
+}
+
+#desc button:hover {
+  cursor: pointer;
+  background-color: #031018;
+}
+
+/*  About us page */
+
+
+#abanner1 {
+  width: 100%;
+  height: 300px;
+  background: url("./img/about/banner.png");
+  background-size: cover;
+  margin: 10px 0px;
+  padding-left: 450px;
+  padding-top: 100px;
+}
+
+#abanner1 h1 {
+  color: #c1ebf3;
+  margin-left: 30px;
+}
+
+#abanner1 h3 {
+  color: #0887d1;
+  margin-left: 170px;
+  margin-top: 20px;
+}
+
+#abanner1 #h1 {
+  color: #c1ebf3;
+  margin-left: 100px;
+}
+
+
+#abanner1 #h3 {
+  color: #0887d1;
+  margin-left: 0px;
+  margin-top: 20px;
+}
+
+
+#whoweare {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  padding: 20px;
+  padding-left: 50px;
+
+}
+
+#whoweare img {
+  height: 100%;
+  width: 40%;
+}
+
+#whoweare .desc {
+  margin-left: 20px;
+  padding-top: 60px;
+}
+
+#whoweare .desc h1 {
+  font-size: 30px;
+}
+
+#whoweare .desc p {
+  text-align: justify;
+}
+
+
+#video {
+  width: 100%;
+  padding: 50px;
+  padding-top: 100px;
+  text-align: center;
+}
+
+#video .video video {
+  height: 100%;
+  width: 70%;
+  margin-top: 40px;
+  border-radius: 40px;
+}
+
+#main {
+  display: flex;
+}
+
+#main .details h4 {
+  font-weight: 200;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+#main .details h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#main .details #h4 {
+  font-weight: 700;
+}
+
+#main .details i {
+  margin-right: 10px;
+}
+
+.map {
+  margin-left: 250px;
+}
+
+#contactusform {
+  padding: 50px;
+  margin: 50px;
+  margin-bottom: 100px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 2px black;
+  width: 60%;
+}
+
+
+#contactusform form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contactusform form h4 {
+  font-weight: 300;
+  font-size: 15px;
+  margin-bottom: 50px;
+}
+
+#contactusform form h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+
+#contactusform form input {
+  width: 95%;
+  margin: 10px 0px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  padding-left: 10px;
+}
+
+#contactusform form textarea {
+  width: 95%;
+  margin: 10px 0px;
+  height: 250px;
+  padding: 10px;
+}
+
+#contactusform form button {
+  width: 100px;
+  height: 40px;
+  margin: 20px 0px;
+  background-color: #0887d1;
+  border: none;
+  color: aliceblue;
+  font-weight: 600;
+  transition: 0.4s linear;
+}
+
+#contactusform form button:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+
+#abanner1 #ch1 {
+  margin-left: 200px;
+}
+
+#abanner1 #ch3 {
+  margin-left: 60px;
+}
+
+
+#table {
+  margin: 50px;
+  padding: 0px 100px;
+}
+
+#table thead {
+  border: 1px solid black;
+  padding: 10px 0px;
+  border-right: none;
+  border-left: none;
+  box-shadow: 0px 2px 2px black;
+}
+
+#table thead th {
+  font-size: 15px;
+  padding: 18px 0px;
+}
+
+#table table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  white-space: nowrap;
+  text-align: center;
+}
+
+#table table td:nth-child(1) {
+  width: 100px;
+}
+
+#table table td:nth-child(2) {
+  width: 150px;
+}
+
+#table table td:nth-child(3) {
+  width: 250px;
+}
+
+#table table td:nth-child(4) {
+  width: 100px;
+}
+
+#table table td:nth-child(5) {
+  width: 70px;
+  padding: 10px 5px;
+}
+
+#table table td:nth-child(6) {
+  width: 200px;
+}
+
+#table td {
+  padding: 15px 0px;
+}
+
+#table input {
+  width: 50px;
+  padding: 10px;
+}
+
+#table img {
+  width: 70px;
+}
+
+
+#total {
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#total .applycoupon h3 {
+  margin-bottom: 30px;
+}
+
+#total .applycoupon {
+  width: 40%;
+}
+
+#total .applycoupon input {
+  height: 40px;
+  width: 75%;
+  margin-right: 0px;
+  padding-left: 10px;
+}
+
+#total .applycoupon button {
+  height: 40px;
+  width: 20%;
+  margin-left: 0px;
+  background-color: #0887d1;
+  color: aliceblue;
+  border: none;
+  transition: 0.4s linear;
+}
+
+#total .applycoupon button:hover {
+  cursor: pointer;
+  background-color: #031018;
+}
+
+#total .subtotal {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 50%;
+  padding: 30px;
+
+}
+
+#total .subtotal h3 {
+  margin-bottom: 20px;
+}
+
+#total table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+}
+
+#total td,
+th {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  height: 50px;
+}
+
+#total th {
+  color: #0887d1;
+}
+
+#total .subtotal button {
+  margin-top: 20px;
+  height: 45px;
+  padding: 15px;
+  border: none;
+  background: #0887d1;
+  font-weight: 500;
+  transition: 0.4s linear;
+  color: aliceblue;
+}
+
+#total .subtotal button:hover {
+  background-color: #031018;
+  cursor: pointer;
+}
+
+.sign {
+  background-color: transparent;
+  height: 300px;
+  width: 500px;
+  color: #0887d1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 0px 0px 10px black;
+  border-bottom-left-radius: 20px;
+  backdrop-filter: blur(20px);
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  transition: 0.1s ease-in-out;
+  visibility: hidden;
+}
+
+
+
+.sign h3 {
+  font-size: 30px;
+  filter: drop-shadow(0px 0px 2px black);
+}
+
+.sign form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 50px 0px 20px;
+  font-size: 20px;
+  width: 85%;
+
+}
+
+.sign form label {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: right;
+  filter: drop-shadow(0px 0px 2px black);
+}
+
+.sign form input {
+  height: 30px;
+  width: 250px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: end;
+}
+
+.sign button {
+  background-color: #0887d1;
+  width: 150px;
+  height: 50px;
+  font-weight: 600;
+  color: aliceblue;
+  border: none;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.sign button:hover {
+  background-color: #031018;
+  cursor: pointer;
+}
+
+.sign i {
+  position: absolute;
+  right: 30px;
+  font-size: 30px;
+  filter: drop-shadow(2px 2px 3px white);
+  cursor: pointer;
+}
+
+
+.signin {
+  right: 0px;
+  visibility: visible;
+  transition: 0.1s;
+}
+
+
+
+
+
+
+
+/* Media QUeries*/
+
+@media (max-width: 740px) {
+  .header {
+    width: 100%;
+  }
+
+  .navbar .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0px;
+    right: -350px;
+    height: 100vh;
+    width: 300px;
+    box-shadow: 0px 0px 5px #0887d1;
+    padding-top: 100px;
+    transition: 0.6s linear;
+    visibility: hidden;
+  }
+
+  #close {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+
+  }
+
+  #close.xactive {
+    visibility: visible;
+  }
+
+  .navbar .main-content a {
+    margin-bottom: 25px;
+  }
+
+  .navbar .main-content.active {
+    right: -120px;
+    visibility: visible;
+  }
+
+  .header {
+
+    width: 40vh;
+  }
+
+  #mobile {
+    font-size: 24px;
+    display: flex;
+    visibility: visible;
+  }
+
+  #mobile input {
+    display: none;
+  }
+
+  #mobile i {
+    margin-left: 30px;
+  }
+
+  #hero {
+    width: 20vh;
+    padding-left: 0px;
+    padding-top: 300px;
+    z-index: 2;
+    height: 40vh;
+  }
+
+
+  .navbar .main-content #sign {
+    margin-left: 22px;
+  }
+
+  #hero {
+    margin-left: -100px;
+  }
+
+  #hero h4 {
+    font-size: 20px;
+    z-index: 3;
+    display: none;
+    width: 200px;
+  }
+
+  #hero h2 {
+    width: 400px;
+    font-size: 30px;
+    z-index: 3;
+    display: none;
+    margin-top: -10px;
+  }
+
+  #hero button {
+    display: none;
+  }
+
+  #hero p {
+    width: 300px;
+    z-index: 3;
+    margin-bottom: 45px;
+    display: none;
+  }
+
+
+  #featured-products h1 {
+    width: 300px;
+    font-size: 30px;
+    margin-left: 270px;
+
+  }
+
+  .featured-products-collection {
+    display: flex;
+    width: 100vh;
+    flex-wrap: wrap;
+  }
+
+  #featured-products .p1 {
+    margin-left: 280px;
+    width: 300px;
+  }
+
+  #featured-products .product {
+    margin-left: 95px;
+  }
+
+  #banner1 {
+    background-image: url("./img/banner/young-asia-lady-using-phone-credit-bank-card-with-positive-expression-smile-broadly-dressed-casual-clothing-stand-isolated-blue-background-panoramic-banner-background-with-copy-space.jpg");
+    height: 350px;
+    width: 100vh;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    padding-top: 100px;
+    background-size: cover;
+  }
+
+  #banner1 h2 {
+    font-size: 25px;
+    margin-left: 62px;
+    margin-top: -2px;
+    filter: drop-shadow(2px 2px 2px #d2e2e5);
+  }
+
+
+  #banner1 h5 {
+    color: #c1ebf3;
+    margin-left: 311px;
+    margin-bottom: 10px;
+  }
+
+  #banner1 button {
+    margin-left: 287px;
+    margin-top: 20px;
+    appearance: none;
+    height: 50px;
+    width: 150px;
+    background-color: #d2e2e5;
+    border: none;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 5px inset #d2e2e5;
+    transition: 0.1s linear;
+  }
+
+  #action-banners {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  #action-banners .banner {
+    height: 400px;
+    width: 100%;
+    padding-left: 40px;
+    color: white;
+  }
+
+  #sign-up-banner {
+    height: 150px;
+    width: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    margin-bottom: 50px;
+    align-items: center;
+    background-image: url("./img/banner/bn15.jpg");
+  }
+
+  #sign-up-banner .head h2 {
+    color: #031018;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
+  #sign-up-banner .signup input {
+    height: 29px;
+    width: 245px;
+    margin-right: 0px;
+    text-align: end;
+    padding: 5px;
+    padding-right: 20px;
+  }
+
+  #sign-up-banner .signup button {
+    height: 29px;
+    width: 59px;
+    margin-left: -4px;
+    font-size: 10px;
+    border: none;
+    background-color: rgb(17, 204, 142);
+    transition: 0.5s linear;
+  }
+
+  footer .container .col1 #h6 {
+    font-size: 13px;
+    margin-bottom: 40px;
+  }
+
+  footer .container .col1 img {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 40px;
+  }
+
+  footer .container {
+    display: flex;
+    align-items: end;
+    flex-wrap: nowrap;
+    font-size: 10px;
+  }
+
+  footer .container .col1 p {
+    font-size: 8px;
+  }
+
+
+
+  footer .container .col1 p {
+    font-size: 8px;
+    margin: 5px;
+    margin-left: 5px;
+
+
+  }
+
+  footer .container .col1 #h6 {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    padding: 23px;
+    width: 100vh;
+    padding-left: 50px;
+  }
+
+  footer .about-us {
+    margin-left: 32px;
+    margin-bottom: 60px;
+  }
+
+
+
+  footer .container .col1 img {
+    height: 27px;
+    width: 70px;
+    margin-bottom: 40px;
+  }
+
+  p {
+    font-size: 11px;
+    color: #465b52;
+    margin: 15px 0 20px -41px;
+  }
+
+  #i {
+    height: 40px;
+    width: 40px;
+  }
+
+  #text-banners {
+    height: 229px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 0px 10px 60px;
+
+  }
+
+
+
+  #action-banners .banner {
+    height: 299px;
+    width: 93%;
+    padding-left: 40px;
+    color: white;
+  }
+
+  #text-banners .banner h3 {
+    color: white;
+    font-size: 14px;
+    font-weight: 1000;
+    margin-bottom: 10px;
+  }
+
+  #text-banners .banner {
+    background-color: #222;
+    height: 126px;
+    width: 26%;
+    background-size: cover;
+    padding-top: 37px;
+    padding-left: 20px;
+  }
+
+  p {
+    font-size: 11px;
+    color: #465b52;
+    margin: 15px 0 20px 8px;
+  }
+
+  #text-banners .banner {
+    background-color: #222;
+    height: 126px;
+    width: 32%;
+    background-size: cover;
+    padding-top: 37px;
+    padding-left: 20px;
+    margin: 10px;
+  }
+
+  #sign-up-banner {
+    height: 150px;
+    width: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    margin-bottom: 50px;
+    align-items: center;
+    background-image: url("./img/banner/bn15.jpg");
+  }
+
+  #action-banners .banner {
+    height: 224px;
+    width: 96%;
+    padding-left: 43px;
+    color: white;
+    margin-left: 110px;
+  }
+
+  #hero {
+    margin-left: -100px;
+    padding-left: 1000px;
+    width: 200px;
+
+  }
+
+
+
+  #text-banners {
+    height: 229px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: -27px 0px 10px 60px;
+  }
+
+
+  #featured-products h1 {
+    width: 300px;
+    font-size: 23px;
+    margin-left: 10px;
+  }
+
+  #featured-products .p1 {
+    margin-left: 8px;
+    width: 300px;
+  }
+
+  #featured-products .product {
+    margin-left: 60px;
+  }
+
+  .product img {
+    height: 105px;
+    width: 120px;
+    border-radius: 10px;
+  }
+
+  .product {
+    height: 235px;
+    width: 137px;
+    background-color: rgb(237, 249, 254);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px -5px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #featured-products .product {
+    margin-left: 19px;
+  }
+
+  .product h5 {
+    margin-top: -10px;
+    font-size: 8px;
+  }
+
+  .featured-products-collection {
+    display: flex;
+    width: 50vh;
+    flex-wrap: wrap;
+  }
+
+  #banner1 {
+    background-image: url("./img/banner/young-asia-lady-using-phone-credit-bank-card-with-positive-expression-smile-broadly-dressed-casual-clothing-stand-isolated-blue-background-panoramic-banner-background-with-copy-space.jpg");
+    height: 136px;
+    width: 43vh;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding-top: 100px;
+    background-size: cover;
+  }
+
+  #banner1 h5 {
+    color: #c1ebf3;
+    margin-left: 86px;
+    margin-bottom: 10px;
+    margin-top: -75px;
+  }
+
+  #banner1 h2 {
+    font-size: 10px;
+    margin-left: 32px;
+    margin-top: -19px;
+    filter: drop-shadow(2px 2px 2px #d2e2e5);
+  }
+
+  #banner1 button {
+    margin-left: 101px;
+    margin-top: -8px;
+    appearance: none;
+    height: 22px;
+    width: 73px;
+    background-color: #d2e2e5;
+    border: none;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 5px inset #d2e2e5;
+    font-size: 7px;
+    transition: 0.1s linear;
+  }
+
+  #fp {
+    margin-left: -65px;
+  }
+
+  #action-banners {
+    height: 353px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #action-banners .banner {
+    height: 147px;
+    width: 77%;
+    padding-left: 26px;
+    color: white;
+    margin-left: -40px;
+  }
+
+  #action-banners .b1 h5 {
+    margin-top: 29px;
+    margin-left: 4px;
+    font-weight: 200;
+    font-size: 9px;
+  }
+
+  #action-banners .b1 h2 {
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+    line-height: 10px;
+    filter: drop-shadow(2px 2px 1px black);
+  }
+
+  #action-banners .b1 button {
+    margin-top: 10px;
+    border: 2px solid white;
+    background-color: transparent;
+    height: 20px;
+    color: white;
+    width: 85px;
+    font-size: 9px;
+    font-weight: 700;
+    transition: 0.5s linear;
+  }
+
+  #text-banners {
+    height: 114px;
+    width: 79.3%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: -27px 0px -7px 18px;
+  }
+
+  #text-banners .banner {
+    background-color: #222;
+    height: 61px;
+    width: 32%;
+    background-size: cover;
+    padding-top: 15px;
+    padding-left: 10px;
+    margin: 5px;
+  }
+
+  #text-banners .banner h3 {
+    color: white;
+    font-size: 9px;
+    font-weight: 1000;
+    margin-bottom: 6px;
+  }
+
+  #text-banners .banner h5 {
+    color: red;
+    font-size: 6px;
+  }
+
+  #sign-up-banner {
+    height: 111px;
+    width: 47vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5px;
+    margin-bottom: 25px;
+    align-items: center;
+    background-image: url("./img/banner/bn15.jpg");
+  }
+
+  #sign-up-banner .head h2 {
+    color: #031018;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+  }
+
+  #sign-up-banner .head p {
+    color: aliceblue;
+    font-size: 7px;
+  }
+
+  #sign-up-banner .signup input {
+    height: 14px;
+    width: 90px;
+    margin-right: 0px;
+    text-align: end;
+    position: relative;
+    left: -70px;
+    top: -15px;
+    padding: 5px;
+    padding-right: 10px;
+    font-size: 7px;
+  }
+
+  #sign-up-banner .signup button {
+    height: 14px;
+    width: 34px;
+    margin-left: -4px;
+    font-size: 6px;
+    margin-right: 15px;
+    position: relative;
+    left: -70px;
+    top: -15px;
+    border: none;
+    background-color: rgb(17, 204, 142);
+    transition: 0.5s linear;
+  }
+
+  footer {
+    padding: 0px;
+    width: 47vh;
+    padding-left: 14px;
+  }
+
+  #i {
+    height: 32px;
+    width: 32px;
+    margin-bottom: 15px;
+  }
+
+  footer .container {
+    display: flex;
+    align-items: end;
+    flex-wrap: nowrap;
+    font-size: 0px;
+  }
+
+  footer .container .col1 #h6 {
+    font-size: 8px;
+    margin-bottom: 14px;
+  }
+
+  footer .container .col1 p {
+    font-size: 4px;
+    margin: 5px;
+    margin-left: 0px;
+  }
+
+  footer .container .col1 #h61 {
+    font-size: 9px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  footer .container .col1 .icons i {
+    margin: 2px;
+    transition: 0.2s linear;
+    cursor: pointer;
+    color: #031018;
+    margin-bottom: 20px;
+  }
+
+  .col1 {
+    width: 20%;
+  }
+
+
+  footer .about-us {
+    margin-left: 7px;
+    margin-bottom: 64px;
+  }
+
+  #install {
+    margin-bottom: 57px;
+    margin-left: 5px;
+  }
+
+  .col1 .icons {
+    font-size: 8px;
+  }
+
+  #Sbannner1 {
+    background-image: url("./img/banner/b1.jpg");
+    height: 109px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding-top: 113px;
+    padding-left: 48px;
+    background-size: cover;
+    color: #d2e2e5;
+  }
+
+  #featured-products h1 {
+    width: 300px;
+    font-size: 23px;
+    margin-left: 24px;
+  }
+
+  #featured-products .product {
+    margin-left: 29px;
+  }
+
+  footer .container .col1 img {
+    height: 27px;
+    width: 27px;
+    margin-bottom: 40px;
+  }
+
+  #sign-up-banner .signup input {
+    height: 14px;
+    width: 90px;
+    margin-right: 0px;
+    text-align: end;
+    position: relative;
+    left: -41px;
+    top: 4px;
+    padding: 5px;
+    padding-right: 10px;
+    font-size: 7px;
+  }
+
+
+  h1 {
+    font-size: 25px;
+    line-height: 0px;
+    color: #222;
+
+    margin-top: -40px;
+  }
+
+  .header {
+    width: 43vh;
+  }
+
+  #hero {
+    margin-left: 0px;
+    padding-left: 306px;
+    width: 200px;
+  }
+
+  #main {
+    padding: 40px;
+    display: flex;
+    height: 60%;
+    flex-direction: column;
+  }
+
+  #mainimg {
+    width: 100%;
+    margin-bottom: 0px;
+    margin-right: 40px;
+    display: flex;
+  }
+
+  #mainimg #img {
+    width: 100%;
+    height: 180px;
+  }
+
+  .small-image-group {
+    display: flex;
+    margin: 0px;
+    margin-left: 4px;
+    flex-direction: column;
+  }
+
+  .small-image-group .smallimg {
+    margin: 3px;
+    width: 35.7%;
+    cursor: pointer;
+  }
+
+  #desc {
+    height: 100%;
+    padding: 0px;
+    margin-top: 30px;
+  }
+
+  #desc h3 {
+    margin-top: 19px;
+    margin-bottom: -11px;
+  }
+
+  #desc #h3 {
+    margin-top: 29px;
+    color: #0887d1;
+    margin-bottom: 10px;
+  }
+}
